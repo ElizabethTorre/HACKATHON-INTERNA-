@@ -3,6 +3,7 @@ import { verDataFb } from "../controlador-firebase/controlador-fb.js";
 import { productos, currentUser } from "../controlador-firebase/controlador-fb.js";
 import { components } from '../vistas/index.js';
 import { changeRoute } from '../controlador-rutas/funciones.js';
+// import { drawChart } from '../vistas/grafic.js';
 
 export default () => {
   const viewCatalogue = `
@@ -47,7 +48,8 @@ export default () => {
   <div>
 </div>
     <div>
-      <button id="btnOk">→</button>
+      <a href="./graf.html"> Gráfica </a>
+      
     </div>
     <div id="containerCentral" class ="cardProd"></div>
     <div>
@@ -66,7 +68,10 @@ export default () => {
   const btnJabones = divElement.querySelector('#btnJabones');
   const box = divElement.querySelector('#containerCentral');
   const btnCarrito = divElement.querySelector('#btnCarrito');
+  // const btnOk = divElement.querySelector('#btnOk');
 
+  // btnOk.addEventListener('click', drawChart());
+  
   buscar.addEventListener('click', () => {
     //show().then(response => console.log(response))
    console.log(show());

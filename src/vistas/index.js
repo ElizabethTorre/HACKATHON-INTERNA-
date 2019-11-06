@@ -6,6 +6,8 @@ import Different from './notFound.js';
 import Products from './products.js';
 import resumencompra from '../vistas/resumencompra.js';
 import Usuario from '../vistas/usuario.js';
+// import Grafic from '../vistas/grafic.js';
+
 const components = {
     catalogo: catalogo,
     login:login,
@@ -15,6 +17,7 @@ const components = {
     different: Different,
     products: Products,
     usuario:Usuario,
+    // grafic: Grafic,
 }
 
 export {

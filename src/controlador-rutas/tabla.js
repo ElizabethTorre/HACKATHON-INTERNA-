@@ -1,6 +1,6 @@
 // import { arrProducto } from "../controlador-rutas/funciones.js";
 import { guardarPedidos } from '../controlador-firebase/controlador-fb.js'
-const arrProducto = JSON.parse(localStorage.getItem('datos')).datos;
+// const arrProducto = JSON.parse(localStorage.getItem('datos')).datos;
 // let sumaTotal = 0
 export const btnDatos = (doc) => {
   // const box1 = document.getElementById('carrito-compras');
@@ -14,20 +14,15 @@ export const btnDatos = (doc) => {
       <td><button class="btnEliminar" id="${doc.id}">X</button></td>
     `;
   
-  // box1.appendChild(btnPintardato);
-  // console.log(`se agregó ${doc.id}`);
-  // const subtotal = doc.precio * doc.cantidad
-  
-  // sumaTotal += subtotal
   const contenedor = document.querySelector('#containerTabla');
   const btnEliminar = btnPintardato.querySelector('.btnEliminar');
   btnEliminar.addEventListener('click', () => {
     // const even = event.target.id;
 
-    const newArray = arrProducto.filter((ele) => {
-    return doc.id !== ele.id;
-    });
-    console.log(newArray);
+    // const newArray = arrProducto.filter((ele) => {
+    // return doc.id !== ele.id;
+    // });
+    // console.log(newArray);
     // contenedor.removeChild(btnPintardato);
     // removeLocalStorage(arrProducto, even);
     // btnTotal(sumaTotal -= subtotal);
